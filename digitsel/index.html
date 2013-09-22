@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>数码管图案调制</title>
+<script type="text/javascript" src="lib/json2.js"></script>
+<script type="text/javascript" src="lib/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="lib/d3.v2.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/digit.js"></script>
+<link href="css/default.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h>数码管图案调制</h>
+<hr>
+<h2>
+	字间距
+	<input value="增加" type="button" onclick="addSpace();"> 
+	<input value="减少" type="button" onclick="removeSpace();">
+	&nbsp;&nbsp;&nbsp;
+	数码管个数:<span class="digit_cnt">1</span>&nbsp;&nbsp;
+	<input value="增加" type="button" onclick="addDigit();"> 
+	<input value="减少" type="button" onclick="removeDigit();">
+	&nbsp;&nbsp;&nbsp;
+	<input value="放大" type="button" onclick="zoomin();"> 
+	<input value="缩小" type="button" onclick="zoomout();">
+</h2>
+<hr>
+<svg version="1.1" x="0px" y="0px" width="1300px" height="400px">
+<g transform="scale(1)" class="all_digit">
+	<g class="digit_0">
+		<g transform="translate(51.0236,-779.528)">
+			<path d="M0 823.46 L28.09 806.46 L126.4 806.46 L154.49 824.17 L126.4 841.89 L28.09 841.89 L0 823.46 Z" 
+			class="digit d0"/>
+		</g>
+		<g transform="translate(874.488,44.0787) rotate(90)">
+			<path d="M0 823.46 L28.09 806.46 L126.4 806.46 L154.49 824.17 L126.4 841.89 L28.09 841.89 L0 823.46 Z" 
+			class="digit d1"/>
+		</g>
+		<g transform="translate(1028.83,44.7874) rotate(90)">
+			<path d="M0 823.46 L28.09 806.46 L126.4 806.46 L154.49 824.17 L126.4 841.89 L28.09 841.89 L0 823.46 Z" 
+			class="digit d2"/>
+		</g>
+		<g transform="translate(50.2441,-624.898)">
+			<path d="M0 823.46 L28.09 806.46 L126.4 806.46 L154.49 824.17 L126.4 841.89 L28.09 841.89 L0 823.46 Z" 
+			class="digit d3"/>
+		</g>
+		<g transform="translate(873.78,198.496) rotate(90)">
+			<path d="M0 823.46 L28.09 806.46 L126.4 806.46 L154.49 824.17 L126.4 841.89 L28.09 841.89 L0 823.46 Z" 
+			class="digit d4"/>
+		</g>
+		<g transform="translate(1028.13,199.205) rotate(90)">
+			<path d="M0 823.46 L28.09 806.46 L126.4 806.46 L154.49 824.17 L126.4 841.89 L28.09 841.89 L0 823.46 Z" 
+			class="digit d5"/>
+		</g>
+		<g transform="translate(49.5354,-470.622)">
+			<path d="M0 823.46 L28.09 806.46 L126.4 806.46 L154.49 824.17 L126.4 841.89 L28.09 841.89 L0 823.46 Z" 
+			class="digit d6"/>
+		</g>
+	</g>
+
+</g>
+</svg>
+</body>
+</html>
