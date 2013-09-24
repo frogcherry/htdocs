@@ -4059,7 +4059,11 @@
 				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 				<v:textRect cx="12.7559" cy="572.296" width="32.01" height="15.2035"/>
 				<rect x="0" y="545.669" width="24.0945" height="49.6063" class="st9"/>
-				<text x="2.26" y="574.1" class="st14" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>1# 空调</text>			</g>
+				<text x="2.26" y="574.1" class="st14" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>1# 空调</text>
+				<g class="optmask">
+				  <rect x="0" y="545.669" width="24.0945" height="49.6063" class="mask CT_KT_1"/>
+				</g>
+			</g>
 		</g>
 		<g id="group102-351" transform="translate(94.9606,129.543) rotate(-90)" v:mID="102" v:groupContext="group"
 				v:layerMember="7">
@@ -5505,11 +5509,5 @@
 				<v:textRect cx="31.8168" cy="582.474" width="63.64" height="25.6036"/>
 			</g>
 		</g>
-	</g>
-	
-	<g class="optmask">
-		<g class="mask CT_KT_1">
-	    <rect x="0" y="545.669" width="24.0945" height="49.6063"/>
-	  </g>
 	</g>
 </svg>
