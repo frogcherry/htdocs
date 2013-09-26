@@ -11,6 +11,11 @@
 <link href="css/fiable.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/svgworkspace.css" rel="stylesheet" type="text/css" media="all" />
 
+<script type="text/javascript" src="lib/json2.js"></script>
+<script type="text/javascript" src="lib/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="lib/d3.v2.min.js"></script>
+<script type="text/javascript" src="lib/jqueryui/jquery-ui-1.10.3.custom.min.js"></script>
+<script type="text/javascript" src="js/ct.js"></script>
 </head>
 <body>
 <div id="logo" class="container">
@@ -20,9 +25,9 @@
 <div id="wrapper" class="container">
     <div id="menu" class="container">
         <ul>
-            <li class="current_page_item"><a href="#" accesskey="1" title="">空间布局图</a></li>
-            <li><a href="#" accesskey="1" title="">网络拓扑图</a></li>
-            <li><a href="#" accesskey="2" title="">其他</a></li>
+            <li class="li1" class="current_page_item"><a onclick="navTo(1);" href="#" accesskey="1" title="">空间布局图</a></li>
+            <li class="li2"><a onclick="navTo(2);" href="#" accesskey="2" title="">网络拓扑图</a></li>
+            <li class="li3"><a onclick="navTo(3);" href="#" accesskey="3" title="">其他</a></li>
         </ul>
     </div>
     <div id="three-column" class="container">
