@@ -3,3 +3,8 @@
     stroke: none;
     cursor: pointer;
 }
+
+#svg-container{
+	height: 600px;
+}
+

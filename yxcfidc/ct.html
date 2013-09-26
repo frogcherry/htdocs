@@ -1,41 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>玉溪卷烟厂中心机房</title>
-<script type="text/javascript" src="lib/json2.js"></script>
-<script type="text/javascript" src="lib/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="lib/d3.v2.min.js"></script>
-<script type="text/javascript"
-	src="lib/jqueryui/jquery-ui-1.10.3.custom.min.js"></script>
-<script type="text/javascript" src="js/ct.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+<link href="css/default.css" rel="stylesheet" type="text/css"/>
+<link href="lib/jqueryui/css/ui-lightness/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/fiable.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/svgworkspace.css" rel="stylesheet" type="text/css" media="all" />
 
-<link href="css/default.css" rel="stylesheet" type="text/css">
-<link href="css/svgworkspace.css" rel="stylesheet" type="text/css">
-<link
-	href="lib/jqueryui/css/ui-lightness/jquery-ui-1.10.3.custom.min.css"
-	rel="stylesheet" type="text/css">
 </head>
 <body>
-	<div id="wrapper">
-		<div id="header">
-			<div id="logo">
-				<h1>
-					<a href="#">玉溪卷烟厂中心机房</a>
-				</h1>
-			</div>
-			<div id="slogan">
-				<h2>中心机房布局图、主要设备信息汇总</h2>
-			</div>
-		</div>
-		    <div id="menu">
-            <ul>
-                <li class="li0 first current_page_item"><a href="#" class="tab0" onclick="navTo(0);">空间布局图</a></li>
-                <li class="li1"><a href="#" class="tab1" onclick="navTo(1);">网络拓扑图</a></li>
-                <li class="li2"><a href="#" class="tab2" onclick="navTo(2);">其他</a></li>
-            </ul>
-            <br class="clearfix" />
-            </div>
-	</div>
+<div id="logo" class="container">
+    <h1><span class="icon icon-lock icon-size"></span><a href="#">玉溪卷烟厂<span>中心机房</span></a></h1>
+    <p>主要设备资料概览</p>
+</div>
+<div id="wrapper" class="container">
+    <div id="menu" class="container">
+        <ul>
+            <li class="current_page_item"><a href="#" accesskey="1" title="">空间布局图</a></li>
+            <li><a href="#" accesskey="1" title="">网络拓扑图</a></li>
+            <li><a href="#" accesskey="2" title="">其他</a></li>
+        </ul>
+    </div>
+    <div id="three-column" class="container">
+        <div><span class="arrow-down"></span></div>
+        <div class="svg-container" id="svg-container"></div>
+    </div>
+    <div id="page">
+        <div><span class="arrow-down"></span></div>
+        <div id="box1">
+            <div class="title">
+                <h2>Welcome to our website</h2>
+                <span class="byline">Integer sit amet pede vel arcu aliquet pretium</span> </div>
+            <p>This is <strong>Justifiable</strong>, a free, fully standards-compliant CSS template designed by <a href="http://www.freecsstemplates.org/" rel="nofollow">FreeCSSTemplates.org</a>. The photos in this template are from <a href="http://fotogrph.com/"> Fotogrph</a>. This free template is released under a <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attributions 3.0</a> license, so you are pretty much free to do whatever you want with it (even use it commercially) provided you keep the links in the footer intact. Aside from that, have fun with it :) </p>
+            <a href="#" class="button">Learn More</a>
+        </div>
+        <div id="box2">
+            <div class="title">
+                <h2>Fusce ultrices fringilla</h2>
+                <span class="byline">Integer sit amet pede vel arcu aliquet pretium</span> </div>
+            <p>Mauris aliquet. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Donec nonummy magna quis risus. Quisque eleifend. Phasellus tempor vehicula justo. Aliquam lacinia metus ut elit. Suspendisse iaculis mauris nec lorem. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Curabitur sit amet nulla. Nam in massa.</p>  
+            <a href="#" class="button">Learn More</a>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div><span class="arrow-down"></span></div>
+        <div class="title">
+            <h2>Our Latest Work</h2>
+            <span class="byline">Integer sit amet pede vel arcu aliquet pretium</span> </div>
+        <ul>
+            <li class="current_item"><a href="#" class="image image-full"><img src="images/pic01.jpg" alt="" /></a></li>
+            <li><a href="#" class="image image-full"><img src="images/pic02.jpg" alt="" /></a></li>
+            <li><a href="#" class="image image-full"><img src="images/pic03.jpg" alt="" /></a></li>
+            <li><a href="#" class="image image-full"><img src="images/pic04.jpg" alt="" /></a></li>
+            <li><a href="#" class="image image-full"><img src="images/pic05.jpg" alt="" /></a></li>
+            <li><a href="#" class="image image-full"><img src="images/pic06.jpg" alt="" /></a></li>
+        </ul>
+        <div class="content">
+            <p>Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Donec nonummy magna quis risus. Quisque eleifend. Phasellus tempor vehicula justo. Aliquam lacinia metus ut elit. Suspendisse iaculis mauris nec lorem. Vestibulum suscipit volutpat nulla.</p>
+            <div class="actions"> <a href="#" class="button button-big">Get Started</a> <a href="#" class="button button-big button-alt">Learn More</a> </div>
+        </div>
+    </div>
+</div>
+<div id="copyright">
+    <p>Copyright (c) 2013 
+    <a href="http://www.hongta.com">Hongta Tobacco (group) co., ltd</a>. All rights reserved. | Power by 玉溪卷烟厂信息管理科.</p>
+</div>
 </body>
 </html>
