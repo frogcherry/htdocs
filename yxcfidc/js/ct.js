@@ -120,6 +120,13 @@ function showCTMap(id){
 	fileListCon.load(info.fileList);
 	
 	// load ref-img part
+	var imgList = $("#portfolio .imgList");
+	imgList.html("");
+	var refImgs = info.imgs.split(";");
+	for ( var i = 0; i < refImgs.length; i++) {
+		imgList.append('<li><a class="image image-full cursor_hand"><img src="'
+				+refImgs[i]+ '" alt="" /></a></li>');
+	}
 }
 
 var svgZoomLock = false;
