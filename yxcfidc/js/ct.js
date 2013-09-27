@@ -121,15 +121,15 @@ function putCTMapSvg(info){
 		var effectLayer = rootG.select(".effectLayer");
 		// bind zoom behavior
 		var zoom = d3.behavior.zoom()
-			.scaleExtent([1, 8])
+			.scaleExtent([0.5, 8])
 			.on("zoom", function(){
-				if (svgZoomLock) {
-					return;
-				}
-				svgZoomLock = true;
+//				if (svgZoomLock) {
+//					return;
+//				}
+//				svgZoomLock = true;
 				effectLayer.attr("transform", "translate(" + d3.event.translate + ") "
 						+ "scale(" + d3.event.scale + ")");
-				setTimeout(function(){svgZoomLock = false;}, 200);
+//				setTimeout(function(){svgZoomLock = false;}, 200);
 			}); // return zoom object
 		rootG.call(zoom);
 		// TODO: bind children UI behavior
