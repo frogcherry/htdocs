@@ -111,10 +111,13 @@ function showCTMap(id){
 	content.load(info.infoFile, function(){
 		content.accordion({
 			collapsible: true,
-			active: false
+			active: false,
+			heightStyle: "content"
 			});
 	});
 	// load file list part
+	var fileListCon = $("#page #box2 .content");
+	fileListCon.load(info.fileList);
 	
 	// load ref-img part
 }

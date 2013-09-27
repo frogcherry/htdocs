@@ -1,19 +1,23 @@
-<div id="ct_files_tabs">
-	<ul>
-		<li><a href="#ct_files_f1"><span>机房情况文件</span></a></li>
-		<li><a href="#ct_files_f2"><span>管理规定与标准</span></a></li>
-	</ul>
-	<div id="ct_files_f1">
-	<ul style="list-style: disc inside;">
-	<li>
-        中心机房平面图.
-        <a href="files/ct/中心机房平面图.vsd">[vsd]</a> 
+images/ct/P1040856.JPG;images/ct/P1040872.JPG;images/ct/P1040887.JPG;images/ct/P1040899.JPG;images/ct/P1040904.JPG;images/ct/P1040905.JPG
+
+
+<h3>：&nbsp;&nbsp;&nbsp;&nbsp; </h3>
+<p></p>
+
+
+<li>
+        .
+        <a href="files/ct/">[doc]</a> 
+        <a href="files/ct/">[pdf]</a> 
 </li>
-	</ul>
-	</div>
-	
-	
-	<div id="ct_files_f2">
+        
+     <div id="ct_files_tabs">
+    <ul>
+        <li><a href="#ct_files_f1"><span>机房情况文件</span></a></li>
+        <li><a href="#ct_files_f2"><span>管理规定与标准</span></a></li>
+    </ul>
+    <div id="ct_files_f1"></div>
+    <div id="ct_files_f2">
         <ul style="list-style: disc inside;">
         <li>
         Q/HTG(YX) G09.22—2010 玉溪卷烟厂机房维护管理规定.
@@ -31,9 +35,9 @@
         <a href="files/ct/玉溪卷烟厂网络系统管理规定.pdf">[pdf]</a> 
         </li>
         </ul>
-	</div>
+    </div>
 </div>
 
 <script>
-	$("#ct_files_tabs").tabs();
-</script>
+    $("#ct_files_tabs").tabs();
+</script>   
