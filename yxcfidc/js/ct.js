@@ -106,6 +106,17 @@ function showCTMap(id){
 	} else if (info.imgType == "img"){
 		putCTMapImg(info);
 	}
+	// load info part
+	var content = $("#page #box1 .content");
+	content.load(info.infoFile, function(){
+		content.accordion({
+			collapsible: true,
+			active: false
+			});
+	});
+	// load file list part
+	
+	// load ref-img part
 }
 
 var svgZoomLock = false;
