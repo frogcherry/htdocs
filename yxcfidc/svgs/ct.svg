@@ -169,7 +169,7 @@
 			</v:userDefs>
 			<title>L 工作台</title>
 			<g class="back_behavior_rect_g">
-				<rect x="0" y="0" width="842" height="596" style="fill:black;"/>
+				<rect x="-150" y="400" width="720" height="220"/>
 			</g>
 			<g id="group2-2" transform="translate(454.939,970.157) rotate(135)" v:mID="2" v:groupContext="group"
 					v:layerMember="1;0">
