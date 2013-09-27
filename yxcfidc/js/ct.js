@@ -119,29 +119,55 @@ function showCTMap(id){
 	var fileListCon = $("#page #box2 .content");
 	fileListCon.load(info.fileList);
 	
-	return;
+	//return;
 	// load ref-img part
 	var imgList = $("#portfolio .imgList");
 	imgList.html("");
 	var refImgs = info.imgs.split(";");
 	for ( var i = 0; i < refImgs.length; i++) {
+		var fileName = refImgs[i].split("/").pop();
 		var imgHtml = '<li class="li_'+i+'"><a'
-		+ ' title="' + refImgs[i] + '"'
-		+ ' class="image image-full cursor_hand" ><img src="'
+		+ ' title="' + fileName + '"'
+		+ ' class="image image-full cursor_hand" href="'
+		+ refImgs[i]+ '"><img src="'
 		+ refImgs[i]+ '" alt="" /></a></li>';
 		imgList.append(imgHtml);
 	}
 	
 	setTimeout(function(){
-	    $("#portfolio .imgList a").lightbox();	
-	    //------------------
-	    $.Lightbox.construct({
-	        show_linkback: false,
-	        opacity: 0.6,
-	        text: {
-	            image: '照片'
-	        }
-	    });	
+		imgList.magnificPopup({
+			delegate: 'a',
+			type: 'image',
+			tLoading: 'Loading image #%curr%...',
+			mainClass: 'mfp-with-zoom mfp-img-mobile',
+			gallery: {
+				enabled: true,
+				navigateByImgClick: true,
+				preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+			},
+			zoom: {
+				    enabled: true, // By default it's false, so don't forget to enable it
+
+				    duration: 300, // duration of the effect, in milliseconds
+				    easing: 'ease-in-out', // CSS transition easing function 
+
+				    // The "opener" function should return the element from which popup will be zoomed in
+				    // and to which popup will be scaled down
+				    // By defailt it looks for an image tag:
+				    opener: function(openerElement) {
+				      // openerElement is the element on which popup was initialized, in this case its <a> tag
+				      // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+				      return openerElement.is('img') ? openerElement : openerElement.find('img');
+				    }
+			},
+
+			image: {
+				tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+				titleSrc: function(item) {
+					return  '<small>' + info.name + '</small>' + item.el.attr('title');
+				}
+			}
+			});
 	}, 200);
 }
 
