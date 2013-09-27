@@ -1,0 +1,2 @@
+locId,imgType,imgUrl,path,parent,infoFile,fileList,imgs
+ct,svg,svgs/ct.svg,svg,null,data/ct/ct_info.html,data/ct/ct_files.html,images/ct/01.jpg

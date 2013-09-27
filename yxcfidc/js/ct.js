@@ -1,14 +1,54 @@
+// states
 var ACCEPT_ZOOM = true;
 
+// meta data
+var CtMapMetaData = {};
 
+// ready
 $(document).ready(function(){
-	$("#menu .li1").addClass("current_page_item");
-	$("#three-column .svg-container").bind("mousewheel", zoomSvg);
-	$("#three-column .svg-container").bind("DOMMouseScroll", zoomSvg);
-	
-	showCTMap();
+	loadMetaData(function(){
+		navTo(1);
+	});
 });
 
+/**
+ * 载入元数据
+ */
+function loadMetaData(callback){
+	// load ct map meta data
+	d3.csv("data/csvs/ct.csv",
+			function(d){return d;},
+			function(error, rows){
+				if (error) {
+					showError();
+					alert("系统错误!!" + error);
+					return;
+				}
+				
+				CtMapMetaData = {};
+				// make key-vale
+				for ( var i = 0; i < rows.length; i++) {
+					var item = rows[i];
+					CtMapMetaData[item.locId] = item;
+				}
+				// parse parent-children
+				for ( var i = 0; i < rows.length; i++) {
+					var item = rows[i];
+					if (item.parent in CtMapMetaData) {
+						if(!Array.isArray(CtMapMetaData[item.parent].children)){
+							CtMapMetaData[item.parent].children = [];
+						}
+						CtMapMetaData[item.parent].children.push(item.locId);
+					}
+				}
+				
+				if (callback) {
+					callback();
+				}
+			});
+}
+
+// 点击顶端页面导航
 function navTo(id){
 	// effect
 	$("#menu li").removeClass("current_page_item");
@@ -17,7 +57,7 @@ function navTo(id){
 	// nav
 	switch (id) {
 	case 1:
-		showCTMap();
+		showCTMap("ct");
 		break;
 	default:
 		showBuidingInfo();
@@ -25,6 +65,7 @@ function navTo(id){
 	}
 }
 
+// 显示空页面
 function showBuidingInfo(){
 	ACCEPT_ZOOM = false;
 	
@@ -34,23 +75,61 @@ function showBuidingInfo(){
 	$("#portfolio").hide();
 }
 
-function showCTMap(){
+//显示空页面
+function showError(){
+	ACCEPT_ZOOM = false;
+	
+	$("#three-column .svg-container")
+		.html("<span style='font-size:65px;'>系统错误。。。<span>");
+	$("#page").hide();
+	$("#portfolio").hide();
+}
+
+
+////////////////////
+// 第1页，空间布局
+////////////////////
+/**
+ * 显示层次部件
+ * @param id: 设备位置编号
+ */
+function showCTMap(id){
 	ACCEPT_ZOOM = true;
 	
 	$("#page").show();
 	$("#portfolio").show();
-	$("#three-column .svg-container").load("svgs/ct.svg");
-	
-//	d3.select("#three-column .svg-container svg")
-//		.attr("");
-	
+
+	var info = CtMapMetaData[id];
+	// load img/svg part
+	if (info.imgType == "svg") {
+		putCTMapSvg(info);
+	} else if (info.imgType == "img"){
+		putCTMapImg(info);
+	}
 }
 
-function zoomSvg(event){
-	if (!ACCEPT_ZOOM) {
-		return;
-	}
-	
-	var dt = event.wheelDelta?event.wheelDelta:-event.detail*40;
-	console.log(dt);
+/**
+ * 放置svg交互图
+ * @param info 信息体
+ */
+function putCTMapSvg(info){
+	$("#three-column .svg-container").load(info.imgUrl,
+			function(){
+		// bind zoom behavior
+		var zoom = d3.behavior.zoom(); // return zoom object
+		d3.select("#three-column .svg-container .root")
+			.call(zoom);
+		zoom.scale(2);
+		// TODO: bind children UI behavior
+	});
 }
+
+/**
+ * 放置静态图片
+ * @param info 信息体
+ */
+function putCTMapImg(info){
+	// TODO:
+}
+
+// d3 行为
