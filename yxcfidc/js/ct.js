@@ -75,7 +75,7 @@ function showBuidingInfo(){
 	$("#portfolio").hide();
 }
 
-//显示空页面
+//显示错误空页面
 function showError(){
 	ACCEPT_ZOOM = false;
 	
@@ -119,16 +119,30 @@ function showCTMap(id){
 	var fileListCon = $("#page #box2 .content");
 	fileListCon.load(info.fileList);
 	
+	return;
 	// load ref-img part
 	var imgList = $("#portfolio .imgList");
 	imgList.html("");
 	var refImgs = info.imgs.split(";");
 	for ( var i = 0; i < refImgs.length; i++) {
-		var imgHtml = '<li class="li_'+i+'"><a class="image image-full cursor_hand" onclick="openImgDialog(\''
-		+refImgs[i]+'\','+i+')"><img src="'
-		+refImgs[i]+ '" alt="" /></a></li>';
+		var imgHtml = '<li class="li_'+i+'"><a'
+		+ ' title="' + refImgs[i] + '"'
+		+ ' class="image image-full cursor_hand" ><img src="'
+		+ refImgs[i]+ '" alt="" /></a></li>';
 		imgList.append(imgHtml);
 	}
+	
+	setTimeout(function(){
+	    $("#portfolio .imgList a").lightbox();	
+	    //------------------
+	    $.Lightbox.construct({
+	        show_linkback: false,
+	        opacity: 0.6,
+	        text: {
+	            image: '照片'
+	        }
+	    });	
+	}, 200);
 }
 
 function openImgDialog(imgPath, idx){

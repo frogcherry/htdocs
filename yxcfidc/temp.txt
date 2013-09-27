@@ -41,3 +41,7 @@ images/ct/P1040856.JPG;images/ct/P1040887.JPG;images/ct/P1040904.JPG;images/ct/P
 <script>
     $("#ct_files_tabs").tabs();
 </script>   
+
+
+onclick="openImgDialog(\''
+        +refImgs[i]+'\','+i+')"
