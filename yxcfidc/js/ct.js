@@ -124,9 +124,16 @@ function showCTMap(id){
 	imgList.html("");
 	var refImgs = info.imgs.split(";");
 	for ( var i = 0; i < refImgs.length; i++) {
-		imgList.append('<li><a class="image image-full cursor_hand"><img src="'
-				+refImgs[i]+ '" alt="" /></a></li>');
+		var imgHtml = '<li class="li_'+i+'"><a class="image image-full cursor_hand" onclick="openImgDialog(\''
+		+refImgs[i]+'\','+i+')"><img src="'
+		+refImgs[i]+ '" alt="" /></a></li>';
+		imgList.append(imgHtml);
 	}
+}
+
+function openImgDialog(imgPath, idx){
+	$("#portfolio .imgList li").removeClass("current_item");
+	$("#portfolio .imgList .li_"+idx).addClass("current_item");
 }
 
 var svgZoomLock = false;
