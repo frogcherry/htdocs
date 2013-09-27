@@ -108,6 +108,7 @@ function showCTMap(id){
 	}
 }
 
+var svgZoomLock = false;
 /**
  * 放置svg交互图
  * @param info 信息体
@@ -115,11 +116,22 @@ function showCTMap(id){
 function putCTMapSvg(info){
 	$("#three-column .svg-container").load(info.imgUrl,
 			function(){
+		var rootG = 
+			d3.select("#three-column .svg-container .root");
+		var effectLayer = rootG.select(".effectLayer");
 		// bind zoom behavior
-		var zoom = d3.behavior.zoom(); // return zoom object
-		d3.select("#three-column .svg-container .root")
-			.call(zoom);
-		zoom.scale(2);
+		var zoom = d3.behavior.zoom()
+			.scaleExtent([1, 8])
+			.on("zoom", function(){
+				if (svgZoomLock) {
+					return;
+				}
+				svgZoomLock = true;
+				effectLayer.attr("transform", "translate(" + d3.event.translate + ") "
+						+ "scale(" + d3.event.scale + ")");
+				setTimeout(function(){svgZoomLock = false;}, 200);
+			}); // return zoom object
+		rootG.call(zoom);
 		// TODO: bind children UI behavior
 	});
 }

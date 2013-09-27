@@ -64,7 +64,8 @@
 					xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAADNJREFUKFNj/Pfv3yYGKHhdyMcg2v8JxoXQIAX4MF4FL/N5NpFmAkgHunWkmYCumyg3AACSls+MDxxwnwAAAABJRU5ErkJggg=="/>
 		</pattern>
 	</defs>
-	<g v:mID="4" v:index="2" v:groupContext="foregroundPage" class="root">
+	<g class="root">
+	<g v:mID="4" v:index="2" v:groupContext="foregroundPage" class="effectLayer">
 		<v:custProps>
 			<v:cp v:nameU="VisDoorFrameWidth" v:lbl="门框宽度" v:type="4"
 					v:format="10 mm;20 mm;30 mm;40 mm;50 mm;60 mm;70 mm;80 mm;90 mm;100 mm" v:sortKey="0" v:invis="true"
@@ -167,6 +168,9 @@
 				<v:ud v:nameU="HasText" v:val="VT0(0):5"/>
 			</v:userDefs>
 			<title>L 工作台</title>
+			<g class="back_behavior_rect_g">
+				<rect x="0" y="0" width="842" height="596" style="fill:black;"/>
+			</g>
 			<g id="group2-2" transform="translate(454.939,970.157) rotate(135)" v:mID="2" v:groupContext="group"
 					v:layerMember="1;0">
 				<v:custProps>
@@ -5681,5 +5685,6 @@
 				<v:textRect cx="27.2718" cy="582.474" width="54.55" height="25.6036"/>
 			</g>
 		</g>
+	</g>
 	</g>
 </svg>
