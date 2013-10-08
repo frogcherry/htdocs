@@ -193,6 +193,13 @@ function putCTMapSvg(info){
 //				setTimeout(function(){svgZoomLock = false;}, 200);
 			}); // return zoom object
 		rootG.call(zoom);
+		
+		rootG.selectAll(".optmask")
+			.on("click", function(){
+				var nextId = d3.select(this)
+					.attr("id");
+				console.log("click# "+nextId);
+			});
 		// TODO: bind children UI behavior
 	});
 }

@@ -524,7 +524,7 @@
     <v:textRect cx="12.7559" cy="573.215" width="32.01" height="22.4034"/>
     <rect x="0" y="547.654" width="24.0945" height="47.622" class="st9"/>
     <text x="2.26" y="571.42" class="st13" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>1# 空调<v:newlineChar/><tspan       x="3.76" dy="1.2em" class="st12">（</tspan>主）</text>  
-    <rect x="0" y="547.654" width="24.0945" height="47.622" class="optmask"/>
+    <rect x="0" y="547.654" width="24.0945" height="47.622" class="optmask" id="CT_KT_1"/>
      </g>  
      </g>
   <g id="group102-346" transform="translate(98.0787,128.906) rotate(-90)" v:mID="102" v:groupContext="group"    v:layerMember="7">
@@ -560,7 +560,7 @@
     <v:textRect cx="12.7559" cy="573.215" width="32.01" height="22.4034"/>
     <rect x="0" y="547.654" width="24.0945" height="47.622" class="st9"/>
     <text x="2.26" y="571.42" class="st13" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>2# 空调<v:newlineChar/><tspan       x="3.76" dy="1.2em" class="st12">（</tspan>副）</text>   
-    <rect x="0" y="547.654" width="24.0945" height="47.622" class="optmask"/>
+    <rect x="0" y="547.654" width="24.0945" height="47.622" class="optmask" id="CT_KT_2"/>
     </g>  </g>
   <g id="group113-368" transform="translate(468.78,-386.15)" v:mID="113" v:groupContext="group" v:layerMember="7">
          <title>空间.122</title>
