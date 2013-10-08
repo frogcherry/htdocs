@@ -16,7 +16,7 @@ $(document).ready(function(){
  */
 function loadMetaData(callback){
 	// load ct map meta data
-	d3.csv("data/csvs/ct.csv",
+	d3.csv("data/meta/ct.csv",
 			function(d){return d;},
 			function(error, rows){
 				if (error) {
@@ -108,16 +108,10 @@ function showCTMap(id){
 	}
 	// load info part
 	var content = $("#page #box1 .content");
-	content.load(info.infoFile, function(){
-		content.accordion({
-			collapsible: true,
-			active: false,
-			heightStyle: "content"
-			});
-	});
+	content.load(info.infoFile+"?v=1.03");// load the data every time
 	// load file list part
 	var fileListCon = $("#page #box2 .content");
-	fileListCon.load(info.fileList);
+	fileListCon.load(info.fileList+"?v=1.03");
 	
 	//return;
 	// load ref-img part
@@ -163,11 +157,11 @@ function showCTMap(id){
 			});
 	}, 200);
 }
-
-function openImgDialog(imgPath, idx){
-	$("#portfolio .imgList li").removeClass("current_item");
-	$("#portfolio .imgList .li_"+idx).addClass("current_item");
-}
+//
+//function openImgDialog(imgPath, idx){
+//	$("#portfolio .imgList li").removeClass("current_item");
+//	$("#portfolio .imgList .li_"+idx).addClass("current_item");
+//}
 
 var svgZoomLock = false;
 /**
@@ -199,6 +193,7 @@ function putCTMapSvg(info){
 				var nextId = d3.select(this)
 					.attr("id");
 				console.log("click# "+nextId);
+				showCTMap(nextId);
 			});
 		// TODO: bind children UI behavior
 	});
