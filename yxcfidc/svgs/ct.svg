@@ -517,13 +517,16 @@
     <rect x="0" y="572.598" width="22.6772" height="22.6772" class="st9"/>
     <text x="9.01" y="586.57" class="st13" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>D1</text>   </g>  </g>
   <g id="group101-340" transform="translate(637.37,-494.646)" v:mID="101" v:groupContext="group" v:layerMember="7">
-         <title>空间.121</title>
+         <title>1# 空调（主）</title>
    <desc>1# 空调 主</desc>
    <g id="shape101-341" v:mID="101" v:groupContext="groupContent" v:layerMember="7">
     <v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
     <v:textRect cx="12.7559" cy="573.215" width="32.01" height="22.4034"/>
     <rect x="0" y="547.654" width="24.0945" height="47.622" class="st9"/>
-    <text x="2.26" y="571.42" class="st13" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>1# 空调<v:newlineChar/><tspan       x="3.76" dy="1.2em" class="st12">（</tspan>主）</text>   </g>  </g>
+    <text x="2.26" y="571.42" class="st13" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>1# 空调<v:newlineChar/><tspan       x="3.76" dy="1.2em" class="st12">（</tspan>主）</text>  
+    <rect x="0" y="547.654" width="24.0945" height="47.622" class="optmask"/>
+     </g>  
+     </g>
   <g id="group102-346" transform="translate(98.0787,128.906) rotate(-90)" v:mID="102" v:groupContext="group"    v:layerMember="7">
          <title>空间.102</title>
    <desc>HFC227 灭火柜</desc>
@@ -550,13 +553,15 @@
     <title>工作表.108</title>
     <path transform="" d="M-8.5 594.57 L0 594.57 L0 593.15 L0.71 593.15 L0.71 594.57 L58.82 594.57 L58.82 593.15 L59.53        593.15 L59.53 594.57 L68.03 594.57 L68.03 595.28 L-8.5 595.28 L-8.5 594.57 Z" class="st3"/>   </g>  </g>
   <g id="group112-362" transform="translate(638.504,-403.37)" v:mID="112" v:groupContext="group" v:layerMember="7">
-         <title>空间.275</title>
+         <title>2# 空调（副）</title>
    <desc>2# 空调 副</desc>
    <g id="shape112-363" v:mID="112" v:groupContext="groupContent" v:layerMember="7">
     <v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
     <v:textRect cx="12.7559" cy="573.215" width="32.01" height="22.4034"/>
     <rect x="0" y="547.654" width="24.0945" height="47.622" class="st9"/>
-    <text x="2.26" y="571.42" class="st13" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>2# 空调<v:newlineChar/><tspan       x="3.76" dy="1.2em" class="st12">（</tspan>副）</text>   </g>  </g>
+    <text x="2.26" y="571.42" class="st13" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>2# 空调<v:newlineChar/><tspan       x="3.76" dy="1.2em" class="st12">（</tspan>副）</text>   
+    <rect x="0" y="547.654" width="24.0945" height="47.622" class="optmask"/>
+    </g>  </g>
   <g id="group113-368" transform="translate(468.78,-386.15)" v:mID="113" v:groupContext="group" v:layerMember="7">
          <title>空间.122</title>
    <desc>HFC227 灭火柜</desc>

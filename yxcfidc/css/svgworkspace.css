@@ -1,7 +1,12 @@
-.optmask .mask{
+.optmask{
 	fill: steelblue;
     stroke: none;
     cursor: pointer;
+    fill-opacity: 0.01;
+}
+
+.optmask:hover{
+    fill-opacity: 0.25;
 }
 
 #svg-container{
