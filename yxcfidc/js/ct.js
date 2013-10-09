@@ -178,13 +178,8 @@ function putCTMapSvg(info){
 		var zoom = d3.behavior.zoom()
 			.scaleExtent([0.5, 8])
 			.on("zoom", function(){
-//				if (svgZoomLock) {
-//					return;
-//				}
-//				svgZoomLock = true;
 				effectLayer.attr("transform", "translate(" + d3.event.translate + ") "
 						+ "scale(" + d3.event.scale + ")");
-//				setTimeout(function(){svgZoomLock = false;}, 200);
 			}); // return zoom object
 		rootG.call(zoom);
 		
