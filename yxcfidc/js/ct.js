@@ -183,6 +183,7 @@ function putCTMapSvg(info){
 			}); // return zoom object
 		rootG.call(zoom);
 		
+		// bind dbl-click to nav to next level
 		rootG.selectAll(".optmask")
 			.on("dblclick", function(){
 				var nextId = d3.select(this)
@@ -190,6 +191,9 @@ function putCTMapSvg(info){
 				console.log("click# "+nextId);
 				showCTMap(nextId);
 			});
+		
+		// bind click to show focused equip's info
+		
 		// TODO: bind children UI behavior
 	});
 }
