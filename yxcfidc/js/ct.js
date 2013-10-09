@@ -189,7 +189,7 @@ function putCTMapSvg(info){
 		rootG.call(zoom);
 		
 		rootG.selectAll(".optmask")
-			.on("click", function(){
+			.on("dblclick", function(){
 				var nextId = d3.select(this)
 					.attr("id");
 				console.log("click# "+nextId);
