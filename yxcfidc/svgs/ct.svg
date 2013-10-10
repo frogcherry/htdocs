@@ -229,13 +229,13 @@
     <rect x="0" y="583.937" width="5.81102" height="11.3386" class="st9"/>   </g>  </g>
   <g id="group62-147" transform="translate(-548.787,52.5827) rotate(-90)" v:mID="62" v:groupContext="group" v:layerMember="7">
          <title>空间.62</title>
-   <desc>HFC227 灭火柜</desc>
+   <desc>HFC227 储气瓶柜</desc>
    <g id="shape62-148" v:mID="62" v:groupContext="groupContent" v:layerMember="7">
     <v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
     <v:textRect cx="6.82816" cy="587.988" width="22.01" height="17.6039" transform="rotate(90)"/>
     <pattern id="ptrn2-151_149" patternUnits="userSpaceOnUse" patternTransform="rotate(90)" xlink:href="#ptrn2-151"/>
     <rect x="0" y="579.543" width="12.8976" height="15.7323" class="st11"/>
-    <text x="581.99" y="-8.03" transform="rotate(90)" class="st10" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>HFC227<v:newlineChar/><tspan       x="581.99" dy="1.2em" class="st12">灭火柜</tspan></text>   </g>  </g>
+    <text x="581.99" y="-8.03" transform="rotate(90)" class="st10" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>HFC227<v:newlineChar/><tspan       x="581.9" dy="1.2em" class="st12" style="font-size:0.75em;">储气瓶柜</tspan></text>   </g>  </g>
   <g id="group63-154" transform="translate(45.3543,-485.575)" v:mID="63" v:groupContext="group" v:layerMember="7">
          <title>空间.63</title>
    <desc>市电 输出</desc>
@@ -529,13 +529,13 @@
      </g>
   <g id="group102-346" transform="translate(98.0787,128.906) rotate(-90)" v:mID="102" v:groupContext="group"    v:layerMember="7">
          <title>空间.102</title>
-   <desc>HFC227 灭火柜</desc>
+   <desc>HFC227 储气瓶柜</desc>
    <g id="shape102-347" v:mID="102" v:groupContext="groupContent" v:layerMember="7">
     <v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
     <v:textRect cx="8.32886" cy="589.301" width="22.01" height="17.6039" transform="rotate(90)"/>
     <pattern id="ptrn2-151_348" patternUnits="userSpaceOnUse" patternTransform="rotate(90)" xlink:href="#ptrn2-151"/>
     <rect x="0" y="582.378" width="15.7323" height="12.8976" class="st15"/>
-    <text x="583.3" y="-9.53" transform="rotate(90)" class="st10" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>HFC227<v:newlineChar/><tspan       x="583.3" dy="1.2em" class="st12">灭火柜</tspan></text>   </g>  </g>
+    <text x="583.3" y="-9.53" transform="rotate(90)" class="st10" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>HFC227<v:newlineChar/><tspan       x="583.15" dy="1.2em" class="st12"  style="font-size:0.75em;">储气瓶柜</tspan></text>   </g>  </g>
   <g id="group103-352" transform="translate(1196.22,36) rotate(90)" v:mID="103" v:groupContext="group" v:layerMember="5;6">
          <title>窗式墙.124</title>
    <g id="shape104-353" v:mID="104" v:groupContext="shape" v:layerMember="5;6" transform="translate(0,-1.06299)">
@@ -564,12 +564,12 @@
     </g>  </g>
   <g id="group113-368" transform="translate(468.78,-386.15)" v:mID="113" v:groupContext="group" v:layerMember="7">
          <title>空间.122</title>
-   <desc>HFC227 灭火柜</desc>
+   <desc>HFC227 储气瓶柜</desc>
    <g id="shape113-369" v:mID="113" v:groupContext="groupContent" v:layerMember="7">
     <v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
     <v:textRect cx="15.0069" cy="589.301" width="22.01" height="17.6039"/>
     <rect x="0" y="582.378" width="28.3465" height="12.8976" class="st16"/>
-    <text x="9.01" y="588.1" class="st10" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>HFC227<v:newlineChar/><tspan       x="9.01" dy="1.2em" class="st12">灭火柜</tspan></text>   </g>  </g>
+    <text x="9.01" y="588.1" class="st10" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>HFC227<v:newlineChar/><tspan       x="9" dy="1.2em" class="st12"  style="font-size:0.75em;">储气瓶柜</tspan></text>   </g>  </g>
   <g id="group114-374" transform="translate(500.882,-386.22)" v:mID="114" v:groupContext="group" v:layerMember="7">
          <title>空间.276</title>
    <desc>新风机</desc>
@@ -587,12 +587,12 @@
    <text x="11.39" y="586.83" class="st19" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>门禁</text>  </g>
   <g id="group116-383" transform="translate(249.094,-386.15)" v:mID="116" v:groupContext="group" v:layerMember="7">
          <title>空间.296</title>
-   <desc>HFC227 灭火柜</desc>
+   <desc>HFC227 储气瓶柜</desc>
    <g id="shape116-384" v:mID="116" v:groupContext="groupContent" v:layerMember="7">
     <v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
     <v:textRect cx="15.0069" cy="589.301" width="22.01" height="17.6039"/>
     <rect x="0" y="582.378" width="28.3465" height="12.8976" class="st16"/>
-    <text x="9.01" y="588.1" class="st10" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>HFC227<v:newlineChar/><tspan       x="9.01" dy="1.2em" class="st12">灭火柜</tspan></text>   </g>  </g>
+    <text x="9.01" y="588.1" class="st10" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>HFC227<v:newlineChar/><tspan       x="9.00" dy="1.2em" class="st12" style="font-size:0.75em;">储气瓶柜</tspan></text>   </g>  </g>
   <g id="shape117-389" v:mID="117" v:groupContext="shape" transform="translate(241.654,-396.992)">
    <title>工作表.117</title>
    <desc>机柜</desc>
