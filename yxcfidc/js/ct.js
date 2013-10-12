@@ -8,6 +8,7 @@ var CtMapMetaData = {};
 $(document).ready(function(){
 	loadMetaData(function(){
 		navTo(1);
+		$(".tipPanel.navPath").smartFloat();
 	});
 });
 
@@ -219,6 +220,10 @@ function putCTMapSvg(info){
  */
 function putCTMapImg(info){
 	// TODO:
+}
+
+function updateNavPath(){
+	
 }
 
 // d3 行为
