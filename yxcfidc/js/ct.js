@@ -107,7 +107,10 @@ function showCTMap(id){
 		putCTMapImg(info);
 	}
 	// load info part
-	var content = $("#page #box1 .content");
+	d3.select("#page #box1 .content")
+		.append("div")
+		.classed("infotab-accordion-content");
+	var content = $("#page #box1 .content .infotab-accordion-content");
 	content.load(info.infoFile+"?v=1.03");// load the data every time
 	// load file list part
 	var fileListCon = $("#page #box2 .content");
