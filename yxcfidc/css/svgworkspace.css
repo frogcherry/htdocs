@@ -36,6 +36,8 @@
 	display: inline;
 	position: absolute;
 	top: 90px;
+	color: #2f2f2f;
+	font-weight: bolder;
     /*
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
     margin: 0 auto;

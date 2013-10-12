@@ -107,8 +107,8 @@ function showCTMap(id){
 	} else if (info.imgType == "img"){
 		putCTMapImg(info);
 	}
-	// load info part
 	
+	// load info part
 	var infoPanel = d3.select("#page #box1 .content");
 	infoPanel.html("");
 	infoPanel.append("div")
@@ -125,6 +125,27 @@ function showCTMap(id){
 				   });
 		});
 	});
+	
+	// load path
+	var navPanel = d3.select(".tipPanel.navPath");
+	navPanel.html("");
+	var items = info.path.split(";");
+	for (var i = 0; i < items.length; i++) {
+		var pid = items[i];
+		var pname = CtMapMetaData[pid].name;
+		if (i < items.length-1) {
+			navPanel.append("a")
+				.text(pname)
+				.attr("href", "#")
+				.attr("onclick", "showCTMap('" + pid + "')");
+			navPanel.append("span")
+				.text("  /  ");
+		} else {
+			navPanel.append("span")
+				.text(pname);
+		}
+	}
+	
 	// load file list part
 	var fileListCon = $("#page #box2 .content");
 	fileListCon.load(info.fileList+"?v=1.03");
