@@ -110,8 +110,18 @@ function showCTMap(id){
 	d3.select("#page #box1 .content")
 		.append("div")
 		.classed("infotab-accordion-content");
-	var content = $("#page #box1 .content .infotab-accordion-content");
-	content.load(info.infoFile+"?v=1.03");// load the data every time
+	$.get(info.infoFile+"?v=1.03", function(infoData){// load the data every time
+		$.get(info.model+"?v=1.03", function(modelData){
+			var infomodel = infoData + modelData;
+			var context = $("#page #box1 .content .infotab-accordion-content");
+			context.html(infomodel);
+			context.accordion({
+				   collapsible: true,
+				   active: false,
+				   heightStyle: "content"
+				   });
+		});
+	});
 	// load file list part
 	var fileListCon = $("#page #box2 .content");
 	fileListCon.load(info.fileList+"?v=1.03");
