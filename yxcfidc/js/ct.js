@@ -107,9 +107,11 @@ function showCTMap(id){
 		putCTMapImg(info);
 	}
 	// load info part
-	d3.select("#page #box1 .content")
-		.append("div")
-		.classed("infotab-accordion-content");
+	
+	var infoPanel = d3.select("#page #box1 .content");
+	infoPanel.html("");
+	infoPanel.append("div")
+		.classed("infotab-accordion-content", true);
 	$.get(info.infoFile+"?v=1.03", function(infoData){// load the data every time
 		$.get(info.model+"?v=1.03", function(modelData){
 			var infomodel = infoData + modelData;
