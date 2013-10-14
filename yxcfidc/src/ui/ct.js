@@ -1,9 +1,3 @@
-// states
-var ACCEPT_ZOOM = true;
-
-// meta data
-var CtMapMetaData = {};
-
 // ready
 $(document).ready(function(){
 	loadMetaData(function(){
@@ -11,43 +5,6 @@ $(document).ready(function(){
 		$(".tipPanel.navPath").smartFloat();
 	});
 });
-
-/**
- * 载入元数据
- */
-function loadMetaData(callback){
-	// load ct map meta data
-	d3.csv("data/meta/ct.csv",
-			function(d){return d;},
-			function(error, rows){
-				if (error) {
-					showError();
-					alert("系统错误!!" + error);
-					return;
-				}
-				
-				CtMapMetaData = {};
-				// make key-vale
-				for ( var i = 0; i < rows.length; i++) {
-					var item = rows[i];
-					CtMapMetaData[item.locId] = item;
-				}
-				// parse parent-children
-				for ( var i = 0; i < rows.length; i++) {
-					var item = rows[i];
-					if (item.parent in CtMapMetaData) {
-						if(!Array.isArray(CtMapMetaData[item.parent].children)){
-							CtMapMetaData[item.parent].children = [];
-						}
-						CtMapMetaData[item.parent].children.push(item.locId);
-					}
-				}
-				
-				if (callback) {
-					callback();
-				}
-			});
-}
 
 // 点击顶端页面导航
 function navTo(id){
@@ -68,8 +25,6 @@ function navTo(id){
 
 // 显示空页面
 function showBuidingInfo(){
-	ACCEPT_ZOOM = false;
-	
 	$("#three-column .svg-container")
 		.html("<span style='font-size:65px;'>建设中。。。<span>");
 	$("#page").hide();
@@ -78,8 +33,6 @@ function showBuidingInfo(){
 
 //显示错误空页面
 function showError(){
-	ACCEPT_ZOOM = false;
-	
 	$("#three-column .svg-container")
 		.html("<span style='font-size:65px;'>系统错误。。。<span>");
 	$("#page").hide();
@@ -95,8 +48,6 @@ function showError(){
  * @param id: 设备位置编号
  */
 function showCTMap(id){
-	ACCEPT_ZOOM = true;
-	
 	$("#page").show();
 	$("#portfolio").show();
 
@@ -194,13 +145,7 @@ function showCTMap(id){
 			});
 	}, 200);
 }
-//
-//function openImgDialog(imgPath, idx){
-//	$("#portfolio .imgList li").removeClass("current_item");
-//	$("#portfolio .imgList .li_"+idx).addClass("current_item");
-//}
 
-var svgZoomLock = false;
 /**
  * 放置svg交互图
  * @param info 信息体
