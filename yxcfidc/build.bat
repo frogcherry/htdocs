@@ -1,6 +1,7 @@
 @echo off
 echo Deleting old yxcfidc.js...
 del js\yxcfidc.js
+del js\yxcfidc-min.js
 
 echo Building yxcfidc.js...
 
@@ -23,6 +24,21 @@ echo Done.
 
 echo Building yxcfidc-min.js...
 node uglifyjs\uglifyjs -nc -o js\yxcfidc-min.js js\yxcfidc.js
+echo Done.
+
+echo Deleting old yxcfidc.css...
+del css\yxcfidc.css
+del css\yxcfidc-min.css
+
+echo Building yxcfidc.css...
+echo 1. Building fiable package...
+type css\src\fiable.css >> css\yxcfidc.css
+
+echo 2. Building svgworkspace package...
+type css\src\svgworkspace.css >> css\yxcfidc.css
+
+echo Building yxcfidc-min.css...
+java -jar yuicompressor-2.4.8.jar css\yxcfidc.css -o css\yxcfidc-min.css --charset utf-8
 echo Done.
 
 echo Build Time: %time% %date%
