@@ -170,14 +170,31 @@ function putCTMapSvg(info){
 			.on("dblclick", function(){
 				var nextId = d3.select(this)
 					.attr("id");
-				console.log("click# "+nextId);
+				console.log("dblclick# "+nextId);
 				showCTMap(nextId);
 			});
 		
 		// bind click to show focused equip's info
+		rootG.selectAll(".optmask")
+			.on("click", function(){
+				var nextId = d3.select(this)
+					.attr("id");
+				console.log("click# "+nextId);
+				showFocusedInfo(nextId);
+			});
 		
 		// TODO: bind children UI behavior
 	});
+}
+
+function showFocusedInfo(equipId){
+	d3.select(".focusedEquipDialog").remove();
+	d3.select("body")
+		.append("div")
+		.classed("focusedEquipDialog", true)
+		.html(d3.select("#box1").html());
+	$(".focusedEquipDialog").dialog({autoOpen : false});
+	$(".focusedEquipDialog").dialog("open");
 }
 
 /**
