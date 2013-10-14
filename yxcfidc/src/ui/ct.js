@@ -189,16 +189,31 @@ function putCTMapSvg(info){
 }
 
 function showFocusedInfo(equipId){
-	$(".focusedEquipDialog").dialog("open");
+	var info = CtMapMetaData[equipId];	
+	var infoPanel = d3.select(".focusedEquipDialog .content");
+	infoPanel.html("");
+	infoPanel.append("div")
+		.classed("focused-infotab-accordion-content", true);
+	$.get(info.infoFile+"?v=1.03", function(infoData){// load the data every time
+		$.get(info.model+"?v=1.03", function(modelData){
+			var nextTitle = "设备信息 - " + info.name;
+			$(".focusedEquipDialog").parent()
+				.find(".ui-dialog-title")
+				.text(nextTitle);
+			var infomodel = infoData + modelData;
+			var context = $(".focusedEquipDialog .content .focused-infotab-accordion-content");
+			context.html(infomodel);
+			context.accordion({
+				   collapsible: true,
+				   active: false,
+				   heightStyle: "content"
+				   });
+			$(".focusedEquipDialog").dialog("open");
+		});
+	});
 }
 
 function initFocusedEquipDialog(){
-	var context = $(".focusedEquipDialog .content");
-	context.accordion({
-		   collapsible: true,
-		   active: false,
-		   heightStyle: "content"
-		   });
 	$(".focusedEquipDialog").dialog({autoOpen : false});
 }
 
