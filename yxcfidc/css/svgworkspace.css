@@ -45,3 +45,26 @@
     position: relative;
     */
 }
+
+
+	
+.focusedEquipDialog .title{
+	padding: 0.8em 0em;
+	letter-spacing: 0.10em;
+	text-transform: uppercase;
+}
+	
+.focusedEquipDialog .title h2{
+	font-size: 1.25em;
+	color: #474747;
+}
+	
+.focusedEquipDialog .title .byline{
+	padding-top: 0.50em;
+	font-size: 0.60em;
+	color: #858585;
+}
+	
+.focusedEquipDialog .content{
+	font-size: 0.75em;
+}

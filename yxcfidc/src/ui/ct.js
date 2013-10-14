@@ -4,6 +4,7 @@ $(document).ready(function(){
 		navTo(1);
 		$(".tipPanel.navPath").smartFloat();
 	});
+	initFocusedEquipDialog();
 });
 
 // 点击顶端页面导航
@@ -188,13 +189,17 @@ function putCTMapSvg(info){
 }
 
 function showFocusedInfo(equipId){
-	d3.select(".focusedEquipDialog").remove();
-	d3.select("body")
-		.append("div")
-		.classed("focusedEquipDialog", true)
-		.html(d3.select("#box1").html());
-	$(".focusedEquipDialog").dialog({autoOpen : false});
 	$(".focusedEquipDialog").dialog("open");
+}
+
+function initFocusedEquipDialog(){
+	var context = $(".focusedEquipDialog .content");
+	context.accordion({
+		   collapsible: true,
+		   active: false,
+		   heightStyle: "content"
+		   });
+	$(".focusedEquipDialog").dialog({autoOpen : false});
 }
 
 /**
