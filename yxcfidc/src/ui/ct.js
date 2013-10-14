@@ -219,7 +219,9 @@ function showFocusedInfo(equipId){
 
 function initFocusedEquipDialog(){
 	$(".focusedEquipDialog").dialog({
-		autoOpen : false
+		autoOpen : false,
+		width : 500,
+		maxHeight: 550
 		});
 }
 
