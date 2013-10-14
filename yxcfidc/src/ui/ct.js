@@ -198,6 +198,14 @@ function showFocusedInfo(equipId){
 	infoPanel.html("");
 	infoPanel.append("div")
 		.classed("focused-infotab-accordion-content", true);
+	
+	// 高亮focus部件
+	d3.selectAll(".optmask.focused")
+		.classed("focused", false);
+	d3.select("#"+equipId+".optmask")
+		.classed("focused", true);
+	
+	// 载入信息框数据
 	$.get(info.infoFile+"?v=1.04", function(infoData){// load the data every time
 		$.get(info.model+"?v=1.04", function(modelData){
 			var nextTitle = "设备信息 - " + info.name;
@@ -221,7 +229,11 @@ function initFocusedEquipDialog(){
 	$(".focusedEquipDialog").dialog({
 		autoOpen : false,
 		width : 500,
-		maxHeight: 550
+		maxHeight: 550,
+		close: function(){
+			d3.selectAll(".optmask.focused")
+				.classed("focused", false);
+		}
 		});
 }
 
