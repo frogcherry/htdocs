@@ -188,14 +188,18 @@ function putCTMapSvg(info){
 	});
 }
 
+/**
+ * 显示当前focus的设备信息，单击为focus事件
+ * @param equipId
+ */
 function showFocusedInfo(equipId){
 	var info = CtMapMetaData[equipId];	
 	var infoPanel = d3.select(".focusedEquipDialog .content");
 	infoPanel.html("");
 	infoPanel.append("div")
 		.classed("focused-infotab-accordion-content", true);
-	$.get(info.infoFile+"?v=1.03", function(infoData){// load the data every time
-		$.get(info.model+"?v=1.03", function(modelData){
+	$.get(info.infoFile+"?v=1.04", function(infoData){// load the data every time
+		$.get(info.model+"?v=1.04", function(modelData){
 			var nextTitle = "设备信息 - " + info.name;
 			$(".focusedEquipDialog").parent()
 				.find(".ui-dialog-title")
