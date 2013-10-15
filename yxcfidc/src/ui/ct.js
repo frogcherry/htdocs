@@ -46,14 +46,14 @@ function showError(){
 ////////////////////
 var CT_STATE = {
     CURRENT_ID: "",
-    
+    //DBLCLICK_LOCK: false
 };
 
 /**
  * 显示层次部件
  * @param id: 设备位置编号
  */
-function showCTMap(id){
+function showCTMap(id, callback){
 	$("#page").show();
 	$("#portfolio").show();
 	CT_STATE.CURRENT_ID = id;
@@ -65,7 +65,7 @@ function showCTMap(id){
 	} else if (info.imgType == "img"){
 		putCTMapImg(info);
 	}
-	
+	var callState = 0;
 	// load info part
 	var infoPanel = d3.select("#page #box1 .content");
 	infoPanel.html("");
@@ -81,6 +81,13 @@ function showCTMap(id){
 				   active: false,
 				   heightStyle: "content"
 				   });
+			if (callState>1) {
+				if (callback) {
+					callback();
+				}
+			} else {
+				callState++;
+			}
 		});
 	});
 	
@@ -150,6 +157,13 @@ function showCTMap(id){
 				}
 			}
 			});
+		if (callState>1) {
+			if (callback) {
+				callback();
+			}
+		} else {
+			callState++;
+		}
 	}, 200);
 }
 
@@ -175,6 +189,7 @@ function putCTMapSvg(info){
 		// bind dbl-click to nav to next level
 		rootG.selectAll(".optmask")
 			.on("dblclick", function(){
+//				CT_STATE.DBLCLICK_LOCK = true;
 				var nextId = d3.select(this)
 					.attr("id");
 				console.log("dblclick# "+nextId);
@@ -184,6 +199,10 @@ function putCTMapSvg(info){
 		// bind click to show focused equip's info
 		rootG.selectAll(".optmask")
 			.on("click", function(){
+//				if (CT_STATE.DBLCLICK_LOCK) {
+//					$(".focusedEquipDialog").dialog("close");
+//					return;
+//				}
 				var nextId = d3.select(this)
 					.attr("id");
 				console.log("click# "+nextId);
@@ -233,6 +252,10 @@ function showFocusedInfo(equipId){
 				   active: false,
 				   heightStyle: "content"
 				   });
+			if (CT_STATE.CURRENT_ID == equipId) {
+				$(".focusedEquipDialog").dialog("close");
+				return;
+			}
 			$(".focusedEquipDialog").dialog("open");
 		});
 	});
