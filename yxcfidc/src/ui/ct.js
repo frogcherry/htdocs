@@ -259,24 +259,23 @@ function putCTMapImg(info){
 		.html("");
 	d3.select("#three-column .svg-container")
 		.append("div")
+		.classed("root", true)
 		.append("img")
 		.attr("src", info.imgUrl)
 		.classed("ct-map-img", true);
-	/*
-	var rootG = d3.select("#three-column .svg-container")
-		.append("svg")
-		.append("g")
-		.classed("root", true);
-	var effectLayer = rootG.append("g")
-		.classed("effectLayer", true);
-	var imgLayer = effectLayer.append("g")
-		.classed("imgLayer", true);
-	imgLayer.append("image")
-		.attr("xlink:href", info.imgUrl)
-		.attr("width", 800)
-		.attr("height", 600);
-		*/
-	// TODO:
+	
+    var $panzoom = $('#three-column .svg-container .root').panzoom(
+    		);
+    $panzoom.parent().on('mousewheel.focal', function( e ) {
+      e.preventDefault();
+      var delta = e.delta || e.originalEvent.wheelDelta;
+      var zoomOut = delta ? delta < 0 : e.originalEvent.deltaY > 0;
+      $panzoom.panzoom('zoom', zoomOut, {
+        increment: 0.1,
+        focal: e
+      });
+    });
+	// TODO: zoom and pan 效果
 }
 
 // d3 行为
