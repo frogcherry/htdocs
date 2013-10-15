@@ -1,2 +1,40 @@
-<h3>&nbsp;&nbsp;&nbsp;&nbsp;</h3>
-<p></p>
+/**
+ * 放置svg交互图
+ * @param info 信息体
+ */
+function putCTMapSvg(info){
+	$("#three-column .svg-container").load(info.imgUrl,
+			function(){
+		var rootG = 
+			d3.select("#three-column .svg-container .root");
+		var effectLayer = rootG.select(".effectLayer");
+		// bind zoom behavior
+		var zoom = d3.behavior.zoom()
+			.scaleExtent([0.5, 8])
+			.on("zoom", function(){
+				effectLayer.attr("transform", "translate(" + d3.event.translate + ") "
+						+ "scale(" + d3.event.scale + ")");
+			}); // return zoom object
+		rootG.call(zoom);
+		
+		// bind dbl-click to nav to next level
+		rootG.selectAll(".optmask")
+			.on("dblclick", function(){
+				var nextId = d3.select(this)
+					.attr("id");
+				console.log("dblclick# "+nextId);
+				showCTMap(nextId);
+			});
+		
+		// bind click to show focused equip's info
+		rootG.selectAll(".optmask")
+			.on("click", function(){
+				var nextId = d3.select(this)
+					.attr("id");
+				console.log("click# "+nextId);
+				showFocusedInfo(nextId);
+			});
+		
+		// TODO: bind children UI behavior
+	});
+}

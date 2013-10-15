@@ -44,6 +44,11 @@ function showError(){
 ////////////////////
 // 第1页，空间布局
 ////////////////////
+var CT_STATE = {
+    CURRENT_ID: "",
+    
+};
+
 /**
  * 显示层次部件
  * @param id: 设备位置编号
@@ -51,6 +56,7 @@ function showError(){
 function showCTMap(id){
 	$("#page").show();
 	$("#portfolio").show();
+	CT_STATE.CURRENT_ID = id;
 
 	var info = CtMapMetaData[id];
 	// load img/svg part
@@ -184,6 +190,8 @@ function putCTMapSvg(info){
 				showFocusedInfo(nextId);
 			});
 		
+		// close info dialog when open new svg info
+		$(".focusedEquipDialog").dialog("close");
 		// TODO: bind children UI behavior
 	});
 }
@@ -193,6 +201,11 @@ function putCTMapSvg(info){
  * @param equipId
  */
 function showFocusedInfo(equipId){
+	if (CT_STATE.CURRENT_ID == equipId) {
+		$(".focusedEquipDialog").dialog("close");
+		return;
+	}
+	
 	var info = CtMapMetaData[equipId];	
 	var infoPanel = d3.select(".focusedEquipDialog .content");
 	infoPanel.html("");
@@ -242,11 +255,28 @@ function initFocusedEquipDialog(){
  * @param info 信息体
  */
 function putCTMapImg(info){
+	d3.select("#three-column .svg-container")
+		.html("");
+	d3.select("#three-column .svg-container")
+		.append("div")
+		.append("img")
+		.attr("src", info.imgUrl)
+		.classed("ct-map-img", true);
+	/*
+	var rootG = d3.select("#three-column .svg-container")
+		.append("svg")
+		.append("g")
+		.classed("root", true);
+	var effectLayer = rootG.append("g")
+		.classed("effectLayer", true);
+	var imgLayer = effectLayer.append("g")
+		.classed("imgLayer", true);
+	imgLayer.append("image")
+		.attr("xlink:href", info.imgUrl)
+		.attr("width", 800)
+		.attr("height", 600);
+		*/
 	// TODO:
-}
-
-function updateNavPath(){
-	
 }
 
 // d3 行为

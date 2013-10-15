@@ -74,3 +74,8 @@
 .focusedEquipDialog .content{
 	font-size: 0.75em;
 }
+
+.ct-map-img {
+	max-height: 550px;
+	max-width: 1100px;
+}
