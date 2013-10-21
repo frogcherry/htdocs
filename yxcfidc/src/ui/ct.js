@@ -113,7 +113,9 @@ function showCTMap(id, callback){
 	
 	// load file list part
 	var fileListCon = $("#page #box2 .content");
-	fileListCon.load(info.fileList+"?v=1.03");
+	fileListCon.load(info.fileList+"?v=1.03", function(){
+		$("#ct_files_tabs").tabs();
+	});
 	
 	//return;
 	// load ref-img part
