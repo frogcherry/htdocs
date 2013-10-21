@@ -461,13 +461,15 @@
     <rect x="0" y="561.26" width="17.0079" height="34.0157" class="st9"/>
     <text x="6" y="581.32" class="st13" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>A2</text>   </g>  </g>
   <g id="group94-305" transform="translate(557.008,-498.827)" v:mID="94" v:groupContext="group" v:layerMember="7">
-         <title>空间.94</title>
+         <title>A01机柜</title>
    <desc>A1</desc>
    <g id="shape94-306" v:mID="94" v:groupContext="groupContent" v:layerMember="7">
     <v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
     <v:textRect cx="9.00417" cy="579.518" width="17.01" height="15.2035"/>
     <rect x="0" y="561.26" width="17.0079" height="34.0157" class="st9"/>
-    <text x="6" y="581.32" class="st13" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>A1</text>   </g>  </g>
+    <text x="6" y="581.32" class="st13" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>A1</text>   
+    <rect x="0" y="561.26" width="17.0079" height="34.0157" class="optmask" id="CT_G_A01"/>
+    </g>  </g>
   <g id="group95-310" transform="translate(437.953,-428.598)" v:mID="95" v:groupContext="group" v:layerMember="7">
          <title>空间.115</title>
    <desc>D6</desc>
