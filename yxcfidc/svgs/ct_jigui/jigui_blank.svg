@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- 由 Microsoft Visio, SVG Export 生成 A16.svg Page-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="11.6929in" height="8.26772in"
+		viewBox="0 0 841.89 595.276" xml:space="preserve" color-interpolation-filters="sRGB" class="st4">
+	<v:documentProperties v:langID="2052" v:metric="true" v:viewMarkup="false">
+	</v:documentProperties>
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:url(#grad7-5);stroke:#000000;stroke-linecap:butt;stroke-width:1.25}
+		.st2 {fill:#000000;font-family:Calibri;font-size:1.00001em}
+		.st3 {fill:#000000;font-family:黑体;font-size:1.00001em}
+		.st4 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+	<defs id="Patterns_And_Gradients">
+		<radialGradient id="grad7-5" cx="0" cy="0" r="1.4">
+			<stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+			<stop offset="1" stop-color="#c0c0c0" stop-opacity="1"/>
+		</radialGradient>
+	</defs>
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>页-1</title>
+		<v:pageProperties v:drawingScale="39.3701" v:pageScale="1.9685" v:drawingUnits="6" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<g id="group1-1" transform="translate(57.8126,-271.857)" v:mID="1" v:groupContext="group">
+			<title>机柜</title>
+			<desc>机柜空</desc>
+			<g id="shape2-2" v:mID="2" v:groupContext="shape" transform="translate(3.54331,0)">
+				<title>工作表.2</title>
+				<rect x="0" y="584.646" width="75.7134" height="10.6299" class="st1"/>
+			</g>
+			<g id="shape3-6" v:mID="3" v:groupContext="shape" transform="translate(3.54331,-275.23)">
+				<title>工作表.3</title>
+				<rect x="0" y="589.606" width="75.7134" height="5.66929" class="st1"/>
+			</g>
+			<g id="shape4-9" v:mID="4" v:groupContext="shape" transform="translate(3.54331,-10.6299)">
+				<title>工作表.4</title>
+				<path d="M70.26 595.28 L75.71 595.28 L75.71 330.68 L70.26 330.68 L70.26 595.28 ZM0 595.28 L5.46 595.28 L5.46 330.68
+							 L0 330.68 L0 595.28 Z" class="st1"/>
+			</g>
+			<g id="shape5-12" v:mID="5" v:groupContext="shape">
+				<title>工作表.5</title>
+				<path d="M79.26 595.28 L82.8 595.28 L82.8 314.38 L79.26 314.38 L79.26 595.28 ZM0 595.28 L3.54 595.28 L3.54 314.38
+							 L0 314.38 L0 595.28 Z" class="st1"/>
+			</g>
+			<g id="shape6-15" v:mID="6" v:groupContext="shape" transform="translate(0,-280.899)">
+				<title>工作表.6</title>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="41.4" cy="588.074" width="82.81" height="14.4037"/>
+				<text x="30.11" y="591.67" class="st2" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>42 U</text>			</g>
+			<g id="shape1-17" v:mID="1" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="114.438" cy="326.366" width="46.72" height="23.9788"/>
+				<text x="96.44" y="330.36" class="st3" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>机柜空</text>			</g>
+		</g>
+	</g>
+</svg>
