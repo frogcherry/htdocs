@@ -1,8 +1,21 @@
 function trans(){
 	var text = $("#indata").val();
-	var htmlData = mkHtml(text);
+	var htmlData = mkHtml(htmlEscape(text));
 	$("#outdata").val(htmlData);
 }
+
+function htmlEscape(text) {
+	return text.replace(/[<>]/g, function(match, pos, originalText){
+		switch (match) {
+		case "<":
+			return "&lt;";
+		case ">":
+			return "&gt;";
+		default:
+			return match;
+		}
+	});
+};
 
 function mkHtml(text){
 	var data = "";

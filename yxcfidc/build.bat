@@ -12,6 +12,8 @@ echo  * Build Time: %time% %date% >> js\yxcfidc.js
 echo  **/ >> js\yxcfidc.js
 
 echo 1. Building tools package...
+type src\tools\util.root.js >> js\yxcfidc.js
+type src\tools\htmlEscape.js >> js\yxcfidc.js
 type src\tools\jquery.smart-float.js >> js\yxcfidc.js
 
 echo 2. Building data package...
