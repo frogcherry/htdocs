@@ -208,21 +208,25 @@
    <g id="shape58-130" v:mID="58" v:groupContext="groupContent" v:layerMember="7">
     <rect x="0" y="583.937" width="5.81102" height="11.3386" class="st9"/>   </g>  </g>
   <g id="group59-133" transform="translate(108.85,-514.559)" v:mID="59" v:groupContext="group" v:layerMember="7">
-         <title>空间.59</title>
+         <title>2#UPS 电池柜</title>
    <desc>2#UPS 电池柜</desc>
    <g id="shape59-134" v:mID="59" v:groupContext="groupContent" v:layerMember="7">
     <v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
     <v:textRect cx="15.0069" cy="589.301" width="34.01" height="12.8037"/>
     <rect x="0" y="582.378" width="28.3465" height="12.8976" class="st9"/>
-    <text x="3.01" y="590.5" class="st10" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>2#UPS 电池柜</text>   </g>  </g>
+    <text x="3.01" y="590.5" class="st10" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>2#UPS 电池柜</text>   
+    <rect x="0" y="582.378" width="28.3465" height="25.7952" class="optmask" id="CT_UPS_2_BAT"/>
+    </g>  </g>
   <g id="group60-138" transform="translate(108.85,-501.024)" v:mID="60" v:groupContext="group" v:layerMember="7">
-         <title>空间.60</title>
+         <title>2#UPS 电池柜</title>
    <desc>2#UPS 电池柜</desc>
    <g id="shape60-139" v:mID="60" v:groupContext="groupContent" v:layerMember="7">
     <v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
     <v:textRect cx="15.0069" cy="589.301" width="34.01" height="12.8037"/>
     <rect x="0" y="582.378" width="28.3465" height="12.8976" class="st9"/>
-    <text x="3.01" y="590.5" class="st10" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>2#UPS 电池柜</text>   </g>  </g>
+    <text x="3.01" y="590.5" class="st10" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>2#UPS 电池柜</text>   
+    
+    </g>  </g>
   <g id="group61-143" transform="translate(103.039,-515.339)" v:mID="61" v:groupContext="group" v:layerMember="7">
          <title>空间.61</title>
    <g id="shape61-144" v:mID="61" v:groupContext="groupContent" v:layerMember="7">
