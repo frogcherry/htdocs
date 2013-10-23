@@ -196,7 +196,7 @@
                <v:textBlock v:margins="rect(4,0,0,0)" v:tabSpace="42.5197"/>
      <v:textRect cx="31.8168" cy="582.474" width="63.64" height="25.6036"/>    </g>   </g>  </g>
   <g id="group57-123" transform="translate(108.85,-541.488)" v:mID="57" v:groupContext="group" v:layerMember="7">
-         <title>空间.7</title>
+         <title>1#UPS 电池柜</title>
    <desc>1#UPS 电池柜</desc>
    <g id="shape57-124" v:mID="57" v:groupContext="groupContent" v:layerMember="7">
     <v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
@@ -682,13 +682,15 @@
    <rect x="0" y="583.196" width="37.3156" height="12.08" class="st18"/>
    <text x="10.66" y="591.64" class="st21" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>斜坡</text>  </g>
   <g id="group123-409" transform="translate(80.2205,-541.488)" v:mID="123" v:groupContext="group" v:layerMember="7">
-         <title>空间.123</title>
+         <title>1#UPS 电池柜</title>
    <desc>1#UPS 电池柜</desc>
    <g id="shape123-410" v:mID="123" v:groupContext="groupContent" v:layerMember="7">
     <v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
     <v:textRect cx="15.0069" cy="589.301" width="34.01" height="12.8037"/>
     <rect x="0" y="582.378" width="28.3465" height="12.8976" class="st9"/>
-    <text x="3.01" y="590.5" class="st10" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>1#UPS 电池柜</text>   </g>  </g>
+    <text x="3.01" y="590.5" class="st10" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>1#UPS 电池柜</text>   
+    <rect x="0" y="582.378" width="56.693" height="12.8976" class="optmask" id="CT_UPS_1_BAT"/>
+    </g>  </g>
   <g id="group124-414" transform="translate(103.039,-502.016)" v:mID="124" v:groupContext="group" v:layerMember="7">
          <title>空间.306</title>
    <g id="shape124-415" v:mID="124" v:groupContext="groupContent" v:layerMember="7">
