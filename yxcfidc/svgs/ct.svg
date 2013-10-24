@@ -215,7 +215,7 @@
     <v:textRect cx="15.0069" cy="589.301" width="34.01" height="12.8037"/>
     <rect x="0" y="582.378" width="28.3465" height="12.8976" class="st9"/>
     <text x="3.01" y="590.5" class="st10" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>2#UPS 电池柜</text>   
-    <rect x="0" y="582.378" width="28.3465" height="25.7952" class="optmask" id="CT_UPS_2_BAT"/>
+    
     </g>  </g>
   <g id="group60-138" transform="translate(108.85,-501.024)" v:mID="60" v:groupContext="group" v:layerMember="7">
          <title>2#UPS 电池柜</title>
@@ -225,7 +225,7 @@
     <v:textRect cx="15.0069" cy="589.301" width="34.01" height="12.8037"/>
     <rect x="0" y="582.378" width="28.3465" height="12.8976" class="st9"/>
     <text x="3.01" y="590.5" class="st10" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>2#UPS 电池柜</text>   
-    
+    <rect x="0" y="569.4804" width="28.3465" height="25.7952" class="optmask" id="CT_UPS_2_BAT"/>
     </g>  </g>
   <g id="group61-143" transform="translate(103.039,-515.339)" v:mID="61" v:groupContext="group" v:layerMember="7">
          <title>空间.61</title>
